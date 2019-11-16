@@ -2,16 +2,39 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-
-# AUTHOR = 'Brett Castellanos'
-# SITENAME = 'Data Science Blog'
-SITEURL = 'https://brett-castellanos.github.io'
+THEME = '/Users/brettcastellanos/projects/pelican-themes/Flex'
 
 PATH = 'content'
-
-TIMEZONE = 'America/Los_Angeles'
+STATIC_PATHS = ['images']
+PLUGIN_PATHS = ['./plugins']
+PLUGINS = ['ipynb.markup']
 
 DEFAULT_LANG = 'en'
+TIMEZONE = 'America/Los_Angeles'
+
+AUTHOR = 'Brett Castellanos'
+SITEURL = 'https://brett-castellanos.github.io'
+SITENAME = 'Data Science Blog'
+SITE_TITLE = 'Data Science Blog'
+SITE_SUBTITLE = 'By Brett Castellanos'
+SITEDESCRIPTION = 'My Portfolio'
+SITELOGO = SITEURL + '/images/profile.png'
+FAVICON = SITEURL + '/images/favicon.ico'
+
+BROWSER_COLOR = '#333'
+ROBOTS = 'index, follow'
+
+CC_LICENSE = {
+    'name': 'Creative Commons Attribution-ShareAlike',
+    'version': '4.0',
+    'slug': 'by-brett-castellanos'
+}
+COPYRIGHT_YEAR = 2019
+
+EXTRA_PATH_METADATA = {
+    'extra/custom.css': {'path': 'static/custom.css'},
+}
+CUSTOM_CSS = 'static/custom.css'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -20,12 +43,10 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-THEME = '/Users/brettcastellanos/projects/pelican-themes/Flex'
-SITE_TITLE = 'Data Science Blog'
-SITE_SUBTITLE = 'By Brett Castellanos'
-SITELOGO = 'https://avatars2.githubusercontent.com/u/37988637?s=400&u=e7cb1181485f65bb4885ef38350bb3b12d35c6eb&v=4'
-
 MAIN_MENU = True
+
+LINKS_IN_NEW_TAB = 'external'
+
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),)
 
@@ -41,8 +62,7 @@ DEFAULT_PAGINATION = 10
 
 MARKUP = ('md', 'ipynb')
 
-PLUGIN_PATHS = ['./plugins']
-PLUGINS = ['ipynb.markup']
+
 
 # if you create jupyter files in the content dir, snapshots are saved with the same
 # metadata. These need to be ignored.
