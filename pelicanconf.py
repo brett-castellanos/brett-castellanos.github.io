@@ -2,9 +2,12 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-THEME = '/Users/brettcastellanos/projects/pelican-themes/Flex'
+THEME = 'Flex'
 
 PATH = 'content'
+ARTICLE_PATHS = ['blog']
+ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
+ARTICLE_URL = '{date:%Y}/{slug}.html'
 STATIC_PATHS = ['images']
 PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['ipynb.markup']
@@ -15,13 +18,13 @@ TIMEZONE = 'America/Los_Angeles'
 AUTHOR = 'Brett Castellanos'
 SITEURL = 'https://brett-castellanos.github.io'
 SITENAME = 'Data Science Blog'
-SITE_TITLE = 'Data Science Blog'
-SITE_SUBTITLE = 'By Brett Castellanos'
+SITETITLE = 'Data Science Blog'
+SITESUBTITLE = 'By Brett Castellanos'
 SITEDESCRIPTION = 'My Portfolio'
 SITELOGO = SITEURL + '/images/profile.png'
 FAVICON = SITEURL + '/images/favicon.ico'
 
-BROWSER_COLOR = '#333'
+BROWSER_COLOR = '#633'
 ROBOTS = 'index, follow'
 
 CC_LICENSE = {
