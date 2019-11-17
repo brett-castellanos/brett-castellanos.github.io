@@ -8,7 +8,8 @@ PATH = 'content'
 ARTICLE_PATHS = ['blog']
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
 ARTICLE_URL = '{date:%Y}/{slug}.html'
-STATIC_PATHS = ['images']
+PAGE_PATHS = ['pages']
+STATIC_PATHS = ['images', 'static']
 PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['ipynb.markup']
 
@@ -16,11 +17,11 @@ DEFAULT_LANG = 'en'
 TIMEZONE = 'America/Los_Angeles'
 
 AUTHOR = 'Brett Castellanos'
-SITEURL = 'https://brett-castellanos.github.io'
+SITEURL = 'http://localhost:8000'
 SITENAME = 'Data Science Blog'
 SITETITLE = 'Data Science Blog'
-SITESUBTITLE = 'By Brett Castellanos'
-SITEDESCRIPTION = 'My Portfolio'
+SITESUBTITLE = AUTHOR
+SITEDESCRIPTION = 'My Data Science Blog'
 SITELOGO = SITEURL + '/images/profile.png'
 FAVICON = SITEURL + '/images/favicon.ico'
 
@@ -48,10 +49,13 @@ AUTHOR_FEED_RSS = None
 
 MAIN_MENU = True
 
+DISPLAY_PAGES_ON_MENU = False # Don't display all pages by default
+USE_FOLDER_AS_CATEGORY = True
+
 LINKS_IN_NEW_TAB = 'external'
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),)
+LINKS = (('Home', 'https://brett-castellanos.github.io/index.html'),)
 
 # Social widget
 SOCIAL = (('linkedin', 'https://www.linkedin.com/in/brett-castellanos'),
