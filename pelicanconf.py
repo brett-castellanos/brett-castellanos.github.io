@@ -24,7 +24,7 @@ SITEDESCRIPTION = 'My Portfolio'
 SITELOGO = SITEURL + '/images/profile.png'
 FAVICON = SITEURL + '/images/favicon.ico'
 
-BROWSER_COLOR = '#633'
+BROWSER_COLOR = '#333'
 ROBOTS = 'index, follow'
 
 CC_LICENSE = {
