@@ -17,7 +17,7 @@ DEFAULT_LANG = 'en'
 TIMEZONE = 'America/Los_Angeles'
 
 AUTHOR = 'Brett Castellanos'
-SITEURL = 'http://localhost:8000'
+SITEURL = 'https://brett-castellanos.github.io'
 SITENAME = 'Data Science Blog'
 SITETITLE = 'Data Science Blog'
 SITESUBTITLE = AUTHOR
@@ -55,7 +55,7 @@ USE_FOLDER_AS_CATEGORY = True
 LINKS_IN_NEW_TAB = 'external'
 
 # Blogroll
-LINKS = (('Home', 'https://brett-castellanos.github.io/index.html'),)
+# LINKS = (('Home', 'https://brett-castellanos.github.io/index.html'),)
 
 # Social widget
 SOCIAL = (('linkedin', 'https://www.linkedin.com/in/brett-castellanos'),
